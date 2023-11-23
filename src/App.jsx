@@ -1,6 +1,6 @@
 import { useState } from "react";
 import style from "../src/app.module.css";
-import Tittle from "./tittle";
+import TittleSection from "./TittleSection";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -14,7 +14,7 @@ function App() {
     <>
       <div className={`${style.App} ${darkMode ? style["dark-mode"] : ""}`}>
         <div className={style.container}>
-          <Tittle />
+          <TittleSection />
           {darkMode !== false ? (
             <button onClick={handleDarkMode}>🌞</button>
           ) : (
