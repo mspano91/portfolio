@@ -35,6 +35,8 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
+  padding-top: 4rem;
   /* border: 2px blue solid; */
 }
 
@@ -51,8 +53,12 @@ h1 {
 @media (max-width:600px){
 
   .container{
-    display: grid;
-      grid-template-columns: repeat(auto-fit, (minmax(150px, 1fr)));
+    display: flex;
+    flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+        padding-top: 1rem;
   }
 
 }
