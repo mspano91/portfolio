@@ -37,6 +37,29 @@
     display: block;
 }
 
+.containerBtns{
+    display: flex;
+    /* border: 1px solid white; */
+    width: 500px;
+    height: 50px;
+}
+
+.box{
+        border: 1px solid white;
+        padding-inline: 1rem;
+        cursor: pointer;
+        align-self: center;
+        font-family: 'Gravitas One', serif;
+        font-size: 18px;
+        transition: transform 0.3s ease;
+}
+
+.box:hover{
+    background-color: white;
+    color: #000000;
+
+    transform: scale(1.10);
+}
 
 
 
@@ -63,8 +86,16 @@ padding-block: 1rem;
         object-fit: cover;
         width: 200px;
     }
+        .containerBtns {
+            display: block;
+            padding-bottom: 9rem;
 
+        }
+
+        .box{border: none;
+        padding-block: .5rem;}
 }
+
 @media (max-width:800px) {
 .tittle {
         text-align: center;

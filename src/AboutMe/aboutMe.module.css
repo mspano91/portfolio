@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Syncopate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+.conainerAbout{
+    display: flex;
+    position: relative;
+    justify-self: center;
+    width: 1350px;
+    height: 100%;
+}
+.conainerAlineacion{
+    display: block;
+    left: 50%;
+    width: 800px;
+    border: 1px solid rgb(71, 255, 178);
+}
+
+.tittle{
+font-family: 'Syncopate', sans-serif;
+font-weight:lighter ;
+padding-block: 1rem;
+}
+.text{
+    font-family: 'Inter', sans-serif;
+    padding-block: 1rem;
+}
+
+@media (max-width:600px) {
+
+.conainerAlineacion {
+    display: block;
+    width: 100%;
+padding-inline: 1rem;}
+
+}

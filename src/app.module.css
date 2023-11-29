@@ -11,6 +11,7 @@ body {
   /* border: 2px red solid; */
   color: #ffffff;
   background-color: #4BAFAF;
+  overflow-x: hidden;
 }
 
 .App{
@@ -21,6 +22,7 @@ body {
 
 .dark-mode {
   color: #ffffff;
+  height: 100%;
   background-color: #171717;
   transition: background-color 0.5s, color 0.5s;
 
@@ -37,9 +39,16 @@ h1 {
   align-items: center;
   gap: 5rem;
   padding-top: 4rem;
+  margin-bottom: 9rem;
   border: 2px blue solid;
 }
 
+.container2{
+    display: flex;
+      justify-content: center;
+      align-items: center;
+        border: 2px rgb(151, 151, 191) solid;
+}
 
 .btnMode{
   border: none;

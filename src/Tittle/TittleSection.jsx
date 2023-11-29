@@ -21,6 +21,12 @@ export default function TittleSection({ darkMode }) {
             UXUI Designer.
           </p>
         </div>
+        <div className={style.containerBtns}>
+          <div className={style.box}>About</div>
+          <div className={style.box}>Skills</div>
+          <div className={style.box}>Projects</div>
+          <div className={style.box}>Contact</div>
+        </div>
       </div>
     </div>
   );
