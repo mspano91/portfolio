@@ -31,4 +31,13 @@ padding-block: 1rem;
     width: 100%;
 padding-inline: 1rem;}
 
+.tittle {
+    justify-content: center;
+    text-align: center;
+}
+
+/* .text {
+text-align: center;
+} */
+
 }

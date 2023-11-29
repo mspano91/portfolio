@@ -3,6 +3,13 @@
   margin: 0 auto;
   text-align: center;
 }
+/* 
+html{
+      background-image: url("../src/assets/img/fondo4.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+} */
+
 
 body {
   margin: 0;
@@ -11,13 +18,15 @@ body {
   /* border: 2px red solid; */
   color: #ffffff;
   background-color: #4BAFAF;
+
   overflow-x: hidden;
 }
 
 .App{
-  height: 100dvh;
+  height: 100%;
   width: 100vw;
   border: 2px solid red;
+
 }
 
 .dark-mode {
