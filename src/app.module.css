@@ -17,12 +17,13 @@ body {
 .App{
   height: 100dvh;
   width: 100vw;
-  /* border: 2px solid red; */
+  border: 2px solid red;
 }
 
 .dark-mode {
   color: #ffffff;
   height: 100%;
+  width: 100%;
   background-color: #171717;
   transition: background-color 0.5s, color 0.5s;
 
