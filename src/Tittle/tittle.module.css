@@ -19,17 +19,13 @@
     font-family: 'Inter', sans-serif;
     font-weight:bolder;
     padding-block: .2rem;
-    /* padding-inline: .5rem; */
     color: #0A3030;
 }
 
-/* .picture{
-    width: 400px;
-} */
 
 .ContainerPicture {
     width: 590px;
-    height: 600px;
+    height: 590px;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -54,8 +50,8 @@ text-align: center;
 padding-block: 1rem;
 }
 .ContainerPicture {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;

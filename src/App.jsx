@@ -1,7 +1,8 @@
 import { useState } from "react";
 import style from "../src/app.module.css";
-import TittleSection from "./TittleSection";
-import Picture from "./Picture.jsx";
+import TittleSection from "./Tittle/TittleSection.jsx";
+import AboutMeSection from "./AboutMe/AboutMe.jsx";
+import Picture from "./Tittle/Picture.jsx";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -23,9 +24,12 @@ function App() {
             🌞Light mode
           </button>
         )}
-        <div className={style.container}>
+        <div className={style.container1}>
           <TittleSection darkMode={darkMode} />
           <Picture />
+        </div>
+        <div className={style.container2}>
+          <AboutMeSection />
         </div>
       </div>
     </>
