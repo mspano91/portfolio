@@ -5,28 +5,18 @@ export default function TittleSection({ darkMode }) {
   return (
     <div>
       <div className={style.tittle}>
-        <p
-          className={style.presentation}
-          style={{ color: darkMode ? "#ffff" : "#000000" }}
-        >
-          Hi everyone, my name is
-        </p>
-        <h1
-          className={style.name}
-          style={{ color: darkMode ? "#ffff" : "#192336" }}
-        >
-          Matias Spano
-        </h1>
+        <p className={style.presentation}>Hi everyone, my name is</p>
+        <h1 className={style.name}>Matias Spano</h1>
         <div className={style.Container}>
           <p
             className={style.headline}
-            style={{ color: darkMode ? "#9A6F9B" : "#4BAFAF" }}
+            style={{ color: darkMode ? "#9A6F9B" : "#0d2020" }}
           >
             Front-End Developer
           </p>
           <p
             className={style.headline}
-            style={{ color: darkMode ? "#9A6F9B" : "#4BAFAF" }}
+            style={{ color: darkMode ? "#9A6F9B" : "#0d2020" }}
           >
             UXUI Designer.
           </p>
