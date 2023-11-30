@@ -1,5 +1,6 @@
 import React from "react";
 import style from "../Tittle/tittle.module.css";
+import { Link } from "react-scroll";
 
 export default function TittleSection({ darkMode }) {
   return (
@@ -22,10 +23,18 @@ export default function TittleSection({ darkMode }) {
           </p>
         </div>
         <div className={style.containerBtns}>
-          <div className={style.box}>About</div>
-          <div className={style.box}>Skills</div>
-          <div className={style.box}>Projects</div>
-          <div className={style.box}>Contact</div>
+          <Link smooth={true} duration={300} to="AboutMe" className={style.box}>
+            About
+          </Link>
+          <Link smooth={true} duration={300} to="" className={style.box}>
+            Skills
+          </Link>
+          <Link smooth={true} duration={300} to="" className={style.box}>
+            Projects
+          </Link>
+          <Link smooth={true} duration={300} to="" className={style.box}>
+            Contact
+          </Link>
         </div>
       </div>
     </div>

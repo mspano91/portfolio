@@ -2,42 +2,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
 .conainerAbout{
     display: flex;
+    flex-direction: row;
     position: relative;
     justify-self: center;
     width: 1350px;
     height: 100%;
+        border: 1px solid black;
 }
+
 .conainerAlineacion{
-    display: block;
+    display: flex;
+    flex-direction: column;
     left: 50%;
-    width: 800px;
+    width: 100%;
+    height: 100% ;
     border: 1px solid rgb(71, 255, 178);
+}
+
+.alineacionText{
+    width: 800px;
+    border: 1px solid rgb(66, 19, 65);
+}
+
+.imageAndText{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    border: 1px solid rgb(179, 100, 178); 
+    height: 100%;
 }
 
 .tittle{
 font-family: 'Syncopate', sans-serif;
 font-weight:lighter ;
 padding-block: 1rem;
+/* padding-inline: 4.5rem; */
 }
 .text{
     font-family: 'Inter', sans-serif;
     padding-block: 1rem;
 }
 
-@media (max-width:600px) {
 
-.conainerAlineacion {
-    display: block;
-    width: 100%;
-padding-inline: 1rem;}
 
-.tittle {
-    justify-content: center;
-    text-align: center;
+@media (max-width:320px), (max-width:800px) {
+    
+    .conainerAlineacion {
+        width: 100%;
+        padding-inline: 1rem;
+        height: 100%;
+    }
+
+    .alineacionText {
+        width: 100%;
+        height: 100%;
+        border: 1px solid orange;
+        text-align: center;
+        
+    }
+
+    .imageAndText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        
+    }
+
+    .tittle {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .conainerAbout {
+        height: 100%;
+    }
 }
 
-/* .text {
-text-align: center;
-} */
+@media (min-width: 769px) and (max-width: 900px) {
+    .alineacionText {
+        margin-top: 30%;
+        width: 550px;
+    }
 
+           .imageAndText {
+               height: 100%;
+               width: 100%;
+    
+           }
+                           .conainerAbout {
+                               height: 100%;
+                           }
 }

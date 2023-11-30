@@ -1,7 +1,7 @@
 import { useState } from "react";
 import style from "../src/app.module.css";
 import TittleSection from "./Tittle/TittleSection.jsx";
-import Picture from "./Tittle/Picture.jsx";
+// import Picture from "./Tittle/Picture.jsx";
 import AboutMe from "./AboutMe/AboutMe.jsx";
 
 function App() {
@@ -24,12 +24,12 @@ function App() {
             🌞Light mode
           </button>
         )}
-        <div>
+        <div className={style.containerFather}>
           <div className={style.container1}>
             <TittleSection darkMode={darkMode} />
-            <Picture />
+            {/* <Picture /> */}
           </div>
-          <div className={style.container2}>
+          <div id="AboutMe" className={style.container2}>
             <AboutMe />
           </div>
         </div>
