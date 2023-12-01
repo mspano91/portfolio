@@ -1,8 +1,8 @@
 import { useState } from "react";
 import style from "../src/app.module.css";
 import TittleSection from "./Tittle/TittleSection.jsx";
-// import Picture from "./Tittle/Picture.jsx";
 import AboutMe from "./AboutMe/AboutMe.jsx";
+import Skills from "./Skills/Skills.jsx";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -27,10 +27,12 @@ function App() {
         <div className={style.containerFather}>
           <div className={style.container1}>
             <TittleSection darkMode={darkMode} />
-            {/* <Picture /> */}
           </div>
           <div id="AboutMe" className={style.container2}>
             <AboutMe darkMode={darkMode} />
+          </div>
+          <div id="skills" className={style.container3}>
+            <Skills darkMode={darkMode} />
           </div>
         </div>
       </div>
