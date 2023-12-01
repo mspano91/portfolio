@@ -7,7 +7,7 @@
     justify-self: center;
     width: 1350px;
     height: 100%;
-        border: 1px solid black;
+    border: 1px solid black;
 }
 
 .conainerAlineacion{
@@ -41,6 +41,11 @@ padding-block: 1rem;
 .text{
     font-family: 'Inter', sans-serif;
     padding-block: 1rem;
+}
+
+.alignTittle{
+    margin-inline: 57px;
+    border: 1px solid rgb(146, 179, 100);
 }
 
 
@@ -79,6 +84,11 @@ padding-block: 1rem;
     .conainerAbout {
         height: 100%;
     }
+
+    .alignTittle {
+        margin-inline: 0px;
+    }
+    
 }
 
 @media (min-width: 769px) and (max-width: 900px) {
@@ -87,12 +97,24 @@ padding-block: 1rem;
         width: 550px;
     }
 
-           .imageAndText {
-               height: 100%;
-               width: 100%;
+    .imageAndText {
+     height: 100%;
+    width: 100%;
     
+    }
+    
+    .conainerAbout {
+        height: 100%;
+        }
+
+ .alignTittle {
+    margin-inline: 0px;
+}
+
+                                                   
+    .colorName {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
            }
-                           .conainerAbout {
-                               height: 100%;
-                           }
 }

@@ -2,11 +2,18 @@ import React from "react";
 import style from "../AboutMe/aboutMe.module.css";
 import Picture from "../Tittle/Picture";
 
-export default function AboutMe() {
+export default function AboutMe({ darkMode }) {
   return (
     <div className={style.conainerAbout}>
       <div className={style.conainerAlineacion}>
-        <h1 className={style.tittle}>About me</h1>
+        <div className={style.alignTittle}>
+          <h1
+            className={style.tittle}
+            style={{ color: darkMode ? "#9A6F9B" : "#0d2020" }}
+          >
+            About me
+          </h1>
+        </div>
         <div className={style.imageAndText}>
           <div className={style.alineacionText}>
             <p className={style.text}>
