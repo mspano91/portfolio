@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Biryani:wght@900&family=Inter:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 
 .presentation{
@@ -10,8 +10,14 @@
     padding-block: 1rem;
 }
 .name{
+    width: 350px;
     font-family: 'Gravitas One', serif;
         font-size: 65px;
+}
+
+.colorName{
+    display: flex;
+    flex-direction: row;
 }
 
 .headline{
@@ -67,23 +73,49 @@
 
 
 
-@media (max-width:600px) {
+@media (max-width:320px)   {
+
+    .headline{
+        font-size: 10px;
+    }
+    .name{
+        font-size: 45px;
+        width: 100%;
+    }
+    .presentation{
+        font-size: 20px;
+    }
+.containerBtns {
+    display: block;
+   padding-bottom: 9rem;
+    width: 100%;
+}
+}
+
+@media (max-width:600px)   {
+
+.headline{
+font-size: 25px;
+    }
+
 .tittle{
+    /* width: 200px; */
 text-align: center;
 }
 .Container{
 padding-block: 1rem;
 
 }
+
 .ContainerPicture {
     width: 150px;
     height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     }
-    
+
     .ContainerPicture img{
         display: flex;
         justify-content: center;
@@ -95,15 +127,21 @@ padding-block: 1rem;
             display: block;
             padding-bottom: 9rem;
             width: 100%;
-
         }
 
         .box{
-            font-size: 20px;
+
             display: block;
             border: none;
-            margin-block: 1.5rem;
+            margin-block: 1rem;
+
        }
+           .colorName {
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+           }
+
 }
 
 @media (max-width:800px) {
@@ -121,6 +159,13 @@ padding-block: 1rem;
         width: 200px;
     }
 
+        .colorName {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
 }
 @media (max-width:1000px) {
 .tittle {
@@ -136,5 +181,17 @@ padding-block: 1rem;
         object-fit: cover;
         width: 200px;
     }
+
+        .colorName {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+.box {
+
+    font-size: 25px;
+
+}
 
 }

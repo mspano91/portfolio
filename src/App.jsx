@@ -30,7 +30,7 @@ function App() {
             {/* <Picture /> */}
           </div>
           <div id="AboutMe" className={style.container2}>
-            <AboutMe />
+            <AboutMe darkMode={darkMode} />
           </div>
         </div>
       </div>
