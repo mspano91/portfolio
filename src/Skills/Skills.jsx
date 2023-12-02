@@ -38,7 +38,7 @@ export default function Skills({ darkMode }) {
         <div className={style.conainerAlineacion}>
           <div className={style.images}>
             {logosB.map((logo, index) => (
-              <span key={index}>
+              <span key={index} className={style.logo}>
                 <img className={style.picture} src={logo} alt="" />
               </span>
             ))}

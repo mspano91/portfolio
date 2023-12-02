@@ -11,10 +11,21 @@
 .conainerAlineacion {
     display: flex;
     flex-direction: column;
-    /* width: 100%; */
+    width: 1350px;
     height: 100%;
     border: 2px solid rgb(71, 255, 132);
+    /* animation: move;
+    animation-duration: 1s; */
 }
+
+/* @keyframes move {
+    from {
+        transform: translateX(-500px);
+    }
+    to{
+        transform: translateX(100px);
+    }
+} */
 
 .alignTittle {
     margin-inline: 57px;
@@ -34,3 +45,17 @@
     border: 1px solid rgb(179, 100, 178);
     height: 100%;
 }
+
+.picture{
+    width: 100px;
+    margin-inline: 2rem;
+    transition-duration: 1s;
+    transition-timing-function: steps(50)
+
+}
+
+.picture:hover {
+    color: #000000;
+    transform: scale(1.45);
+}
+

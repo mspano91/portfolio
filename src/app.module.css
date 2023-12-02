@@ -5,6 +5,13 @@
 }
 
 
+html{
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  
+}
+
+
 
 body {
   margin: 0;
@@ -43,8 +50,21 @@ h1 {
   gap: 5rem;
   padding-top: 4rem;
   margin-bottom: 13rem;
-  border: 2px blue solid;
+  /* border: 2px blue solid; */
+  scroll-snap-align: center;
+      animation: move;
+        animation-duration: 1s;
 
+}
+
+@keyframes move {
+  from {
+    transform: translateX(-500px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
 }
 
 
@@ -54,6 +74,7 @@ h1 {
     align-items: center;
     height: 700px;
     border: 2px rgb(151, 151, 191) solid;
+    scroll-snap-align: center;
 }
 .container3{
     display: flex;
@@ -61,6 +82,7 @@ h1 {
     align-items: center;
     height: 100%;
     border: 5px rgb(20, 20, 185) solid;
+    scroll-snap-align: center;
 }
 
 .btnMode{
