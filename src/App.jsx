@@ -28,9 +28,11 @@ function App() {
           <div className={style.container1}>
             <TittleSection darkMode={darkMode} />
           </div>
+
           <div id="AboutMe" className={style.container2}>
             <AboutMe darkMode={darkMode} />
           </div>
+
           <div id="skills" className={style.container3}>
             <Skills darkMode={darkMode} />
           </div>
