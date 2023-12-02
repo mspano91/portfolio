@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Syncopate&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+
 .conainerAbout{
     display: flex;
     flex-direction: row;

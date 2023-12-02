@@ -17,25 +17,27 @@ export default function AboutMe({ darkMode }) {
         <div className={style.imageAndText}>
           <div className={style.alineacionText}>
             <p className={style.text}>
-              How do I describe myself? I'm a multitasking individual who can
-              contribute various types of knowledge acquired through my
-              curiosity in different subjects. I'm a social and empathetic
-              person who loves making friends and working in a team, regardless
-              of the language. I'd love to work and communicate in English,
-              Italian, or Spanish, and I'm even open to learning another
-              language if needed.
+              I'm a Full-Stack Developer with a clear inclination towards the
+              Front-End, where the fusion of design and technology excites me.
+              My journey began two years ago, and since then, I've fallen in
+              love with the creativity and problem-solving that web development
+              offers.
             </p>
             <p className={style.text}>
-              Lately, I've been learning and working on various tech projects as
-              a Full Stack developer. To be honest, I prefer the Front End,
-              which is what I'm currently looking for, but I’m always open to
-              learning new technologies.
+              My focus is on creating visually appealing and functional
+              experiences. The aesthetics of the Front-End are not just a
+              technical preference for me; it's a way to add a unique touch to
+              each project. My two years of experience have been not only a
+              technical learning but a creative journey that drives me to
+              approach challenges with innovation.
             </p>
             <p className={style.text}>
-              I can also contribute design and marketing insights and
-              experiences because I've been interested in those areas for some
-              time and have taken relevant courses. I hope my experience and
-              skills will be useful for you.
+              I am thrilled about the opportunity to bring my energy and
+              expertise to a dynamic team and contribute to the success of
+              exciting projects. My goal is to add value with every line of code
+              and personal experience gained. I am ready to embark on this
+              professional journey with enthusiasm and dedication! I'm looking
+              forward to what the future holds as a Full-Stack Developer!
             </p>
           </div>
           <div>

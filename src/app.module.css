@@ -47,12 +47,20 @@ h1 {
 
 }
 
+
 .container2{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 700px;
     border: 2px rgb(151, 151, 191) solid;
+}
+.container3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border: 5px rgb(20, 20, 185) solid;
 }
 
 .btnMode{
@@ -68,7 +76,7 @@ h1 {
 @media (max-width:320px),
 (max-width:800px) {
 .container1 {
-
+    height: 680px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -105,5 +113,9 @@ h1 {
   }
   .container2 {
     height: 100%;
+  }
+  .container3 {
+    height: 100%;
+    
   }
 }
