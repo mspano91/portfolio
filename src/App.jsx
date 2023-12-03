@@ -33,7 +33,7 @@ function App() {
             <AboutMe darkMode={darkMode} />
           </div>
 
-          <div id="skills" className={style.container3}>
+          <div id="Skills" className={style.container3}>
             <Skills darkMode={darkMode} />
           </div>
         </div>
