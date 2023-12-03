@@ -9,6 +9,7 @@
     width: 1350px;
     height: 100%;
     border: 1px solid black;
+
 }
 
 .conainerAlineacion{
@@ -29,7 +30,7 @@
     display: flex;
     justify-content: center;
     gap: 2rem;
-    border: 1px solid rgb(179, 100, 178); 
+    border: 1px solid #b364b2; 
     height: 100%;
 }
 

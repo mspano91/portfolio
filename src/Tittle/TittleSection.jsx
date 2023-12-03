@@ -38,10 +38,15 @@ export default function TittleSection({ darkMode }) {
           <Link smooth={true} duration={300} to="Skills" className={style.box}>
             Skills
           </Link>
-          <Link smooth={true} duration={300} to="" className={style.box}>
+          <Link
+            smooth={true}
+            duration={300}
+            to="Projects"
+            className={style.box}
+          >
             Projects
           </Link>
-          <Link smooth={true} duration={300} to="" className={style.box}>
+          <Link smooth={true} duration={300} to="Contact" className={style.box}>
             Contact
           </Link>
         </div>
