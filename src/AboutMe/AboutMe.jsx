@@ -27,7 +27,7 @@ export default function AboutMe({ darkMode }) {
         <div className={style.alignTittle}>
           <h1
             className={style.tittle}
-            style={{ color: darkMode ? "#9A6F9B" : "#0d2020" }}
+            style={{ color: darkMode ? "#0d2020" : "#9A6F9B" }}
           >
             About me
           </h1>

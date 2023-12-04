@@ -18,7 +18,7 @@ body {
   display: flex;
   place-items: center;
   color: #ffffff;
-  background-color: #4BAFAF;
+    background-color: #171717;
   overflow-x: hidden;
 }
 
@@ -31,7 +31,7 @@ body {
 .dark-mode {
   color: #ffffff;
   height: 100%;
-  background-color: #171717;
+    background-color: #4BAFAF;
   transition: background-color 0.5s, color 0.5s;
 
 }
@@ -74,7 +74,7 @@ h1 {
     align-items: center;
     height: 700px;
     border: 2px rgb(236, 198, 11) solid;
-    margin-bottom: 13rem;
+    margin-bottom: 5rem;
 
 
     /* scroll-snap-align: center; */
@@ -85,8 +85,7 @@ h1 {
     align-items: center;
     height: 100%;
     border: 5px rgb(20, 20, 185) solid;
-   
-      margin-bottom: 13rem; /* scroll-snap-align: center; */
+    margin-bottom: 13rem; /* scroll-snap-align: center; */
 }
 
 .btnMode{
