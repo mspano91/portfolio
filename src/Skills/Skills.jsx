@@ -12,13 +12,25 @@ import logoFigma from "../assets/img/icons/FIGMA.png";
 import logoGithub from "../assets/img/icons/GITHUB.png";
 import logoXd from "../assets/img/icons/XD.png";
 import logoSass from "../assets/img/icons/SASS.png";
+import { useScroll, motion } from "framer-motion";
+import { useRef } from "react";
 
 const logosA = [logoJs, logoReact, logoHTML, logoCSS, logoRedux, logoNode];
 const logosB = [logoEX, logoPostSql, logoFigma, logoGithub, logoXd, logoSass];
 
 export default function Skills({ darkMode }) {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["0 1", "1.33 1"],
+  });
+
   return (
-    <div className={style.containerFather}>
+    <motion.div
+      style={{ scale: scrollYProgress, opacity: scrollYProgress }}
+      ref={ref}
+      className={style.containerFather}
+    >
       <div className={style.conainerAlineacion}>
         <div className={style.alignTittle}>
           <h1
@@ -45,6 +57,6 @@ export default function Skills({ darkMode }) {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

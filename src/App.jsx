@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import style from "../src/app.module.css";
 import TittleSection from "./Tittle/TittleSection.jsx";
 import AboutMe from "./AboutMe/AboutMe.jsx";
@@ -10,7 +10,6 @@ function App() {
   const handleDarkMode = () => {
     setDarkMode(!darkMode);
   };
-  console.log(darkMode);
 
   return (
     <>

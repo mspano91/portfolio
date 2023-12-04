@@ -1,10 +1,28 @@
 import React from "react";
+import { useRef } from "react";
 import style from "../AboutMe/aboutMe.module.css";
 import Picture from "../Tittle/Picture";
+import { useScroll, motion } from "framer-motion";
 
 export default function AboutMe({ darkMode }) {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["1 7", "0.8 1"],
+  });
+
   return (
-    <div className={style.conainerAbout}>
+    <motion.div
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 0.8, scale: scrollYProgress }}
+      style={{
+        scale: scrollYProgress,
+        opacity: scrollYProgress,
+        x: window.innerWidth > 0 ? 0 : 0,
+      }}
+      ref={ref}
+      className={style.conainerAbout}
+    >
       <div className={style.conainerAlineacion}>
         <div className={style.alignTittle}>
           <h1
@@ -45,6 +63,6 @@ export default function AboutMe({ darkMode }) {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
