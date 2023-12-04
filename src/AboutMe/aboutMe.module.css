@@ -58,6 +58,8 @@ padding-block: 1rem;
         width: 100%;
         padding-inline: 1rem;
         height: 100%;
+        border: 1px solid rgb(149, 0, 255);
+
     }
 
     .alineacionText {
