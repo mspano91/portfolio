@@ -7,10 +7,8 @@ export default function TittleSection({ darkMode }) {
     <div>
       <div className={style.tittle}>
         {/* <p className={style.presentation}>Hi everyone, my name is</p> */}
+        <p className={style.presentation}>working in progress..</p>
         <div className={style.colorName}>
-          <h1 className={style.name}>working...</h1>
-          <br />
-
           {/* <h1 className={style.name}>Matias</h1>
           <h1
             style={{ color: darkMode ? "#9A6F9B" : "#0d2020" }}
