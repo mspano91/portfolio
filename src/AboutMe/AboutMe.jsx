@@ -35,27 +35,26 @@ export default function AboutMe({ darkMode }) {
         <div className={style.imageAndText}>
           <div className={style.alineacionText}>
             <p className={style.text}>
-              I'm a Full-Stack Developer with a clear inclination towards the
-              Front-End, where the fusion of design and technology excites me.
-              My journey began two years ago, and since then, I've fallen in
-              love with the creativity and problem-solving that web development
-              offers.
+              As a lifelong student hailing from Buenos Aires, prior to delving
+              into the world of technology, I earned a degree in auctions and
+              commercial brokerage.
             </p>
             <p className={style.text}>
-              My focus is on creating visually appealing and functional
-              experiences. The aesthetics of the Front-End are not just a
-              technical preference for me; it's a way to add a unique touch to
-              each project. My two years of experience have been not only a
-              technical learning but a creative journey that drives me to
-              approach challenges with innovation.
+              {" "}
+              I also pursued studies in marketing and relevant UX/UI and design
+              courses. Throughout the years, I've consistently worked on
+              improving my English and Italian.{" "}
             </p>
             <p className={style.text}>
-              I am thrilled about the opportunity to bring my energy and
-              expertise to a dynamic team and contribute to the success of
-              exciting projects. My goal is to add value with every line of code
-              and personal experience gained. I am ready to embark on this
-              professional journey with enthusiasm and dedication! I'm looking
-              forward to what the future holds as a Full-Stack Developer!
+              In 2023, I took a leap and underwent training in modern
+              application development at Fullstack Soy Henry Academy. I quickly
+              assimilated new concepts, bringing forth ambitious ideas and a
+              positive attitude to every challenge.
+            </p>
+            <p className={style.text}>
+              When I'm not coding, I usually engage in exercise, cook with
+              friends, perhaps draw, or simply read and enhance my language
+              skills.
             </p>
           </div>
           <div>

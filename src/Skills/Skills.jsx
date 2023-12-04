@@ -18,6 +18,21 @@ import { useRef } from "react";
 const logosA = [logoJs, logoReact, logoHTML, logoCSS, logoRedux, logoNode];
 const logosB = [logoEX, logoPostSql, logoFigma, logoGithub, logoXd, logoSass];
 
+const fadeInAnimationVariants = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+
+  animate: (index) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.05 * index,
+    },
+  }),
+};
+
 export default function Skills({ darkMode }) {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -42,17 +57,39 @@ export default function Skills({ darkMode }) {
         </div>
         <div className={style.images}>
           {logosA.map((logo, index) => (
-            <span key={index}>
+            <motion.span
+              ref={ref}
+              target="_blank"
+              href={logo}
+              whileHover={{ scale: 1.1 }}
+              variants={fadeInAnimationVariants}
+              initial="initial"
+              whileInView="animate"
+              custom={Math.random()}
+              key={index}
+              className={style.logo}
+            >
               <img className={style.picture} src={logo} alt="" />
-            </span>
+            </motion.span>
           ))}
         </div>
         <div className={style.conainerAlineacion}>
           <div className={style.images}>
             {logosB.map((logo, index) => (
-              <span key={index} className={style.logo}>
+              <motion.span
+                ref={ref}
+                target="_blank"
+                href={logo}
+                whileHover={{ scale: 1.1 }}
+                variants={fadeInAnimationVariants}
+                initial="initial"
+                whileInView="animate"
+                custom={Math.random()}
+                key={index}
+                className={style.logo}
+              >
                 <img className={style.picture} src={logo} alt="" />
-              </span>
+              </motion.span>
             ))}
           </div>
         </div>

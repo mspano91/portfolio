@@ -1,0 +1,17 @@
+
+.containerProjectos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 2px solid red ;
+    width: 1350px;
+
+}
+.containerEach{
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    justify-content: center;
+    border: 2px solid blue;
+    margin-block: 1rem;
+}

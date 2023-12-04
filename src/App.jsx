@@ -3,6 +3,7 @@ import style from "../src/app.module.css";
 import TittleSection from "./Tittle/TittleSection.jsx";
 import AboutMe from "./AboutMe/AboutMe.jsx";
 import Skills from "./Skills/Skills.jsx";
+import Projects from "./Projects/Projects.jsx";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -34,6 +35,9 @@ function App() {
 
           <div id="Skills" className={style.container3}>
             <Skills darkMode={darkMode} />
+          </div>
+          <div id="Projects" className={style.container4}>
+            <Projects darkMode={darkMode} />
           </div>
         </div>
       </div>
