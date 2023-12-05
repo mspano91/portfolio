@@ -1,17 +1,36 @@
 
-.containerProjectos{
+.innerCarousel{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border: 2px solid red ;
-    width: 1350px;
+    /* background-color: aquamarine; */
+    width: 1420px;
 
 }
-.containerEach{
+
+
+.carousel{
+    /* width:100%; */
+    cursor: grab;
+    overflow: hidden;
+            /* background-color: pink; */
+}
+
+.item{
+    padding: 50px;
+
+}
+
+/* .item iframe{
+    pointer-events: none;
+} */
+
+/* .item{
     display: flex;
     flex-direction: column;
     width: 900px;
     justify-content: center;
     border: 2px solid blue;
     margin-block: 1rem;
-}
+    padding-inline: 5rem;
+    
+
+} */
