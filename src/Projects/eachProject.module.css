@@ -1,17 +1,50 @@
 
+.innerCarousel {
+        /* border: 2px solid rgb(9, 114, 44); */
+        display: flex;
+        flex-direction: column;
+        width: 1350px;
+        height: 450px;
+        overflow: auto;
+        overflow-x: hidden}
+
+    .innerCarousel::-webkit-scrollbar {
+                    width: 6px;
+                }
+
+.item{
+    display: flex;
+    flex-direction: row;
+    width: 1320px;
+    /* border: 2px solid blue; */
+    margin-block: 1rem;
+}
+
+.description{
+    width: 400px;
+    padding-inline: 1rem;
+ 
+}
+
+
+
+/* .carousel {
+    border: 2px solid rgb(215, 129, 80);
+} */
+
+/* 
 .innerCarousel{
     display: flex;
-    /* background-color: aquamarine; */
+    background-color: aquamarine;
     width: 1420px;
 
 }
 
 
 .carousel{
-    /* width:100%; */
     cursor: grab;
     overflow: hidden;
-            /* background-color: pink; */
+    background-color: pink;
 }
 
 .item{
@@ -19,18 +52,4 @@
 
 }
 
-/* .item iframe{
-    pointer-events: none;
-} */
-
-/* .item{
-    display: flex;
-    flex-direction: column;
-    width: 900px;
-    justify-content: center;
-    border: 2px solid blue;
-    margin-block: 1rem;
-    padding-inline: 5rem;
-    
-
-} */
+ */
