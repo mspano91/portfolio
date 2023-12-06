@@ -2,11 +2,12 @@
 .conainerAlineacion {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     width: 100%;
-    height: 650px;
+    height: 950px;
     border: 2px solid rgb(71, 255, 132);
+    padding-top: 5rem;
 }
 
 .alignTittle {

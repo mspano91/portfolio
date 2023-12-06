@@ -14,9 +14,24 @@ import logoXd from "../assets/img/icons/XD.png";
 import logoSass from "../assets/img/icons/SASS.png";
 import { useScroll, motion } from "framer-motion";
 import { useRef } from "react";
+import { Tooltip } from "@nextui-org/react";
 
-const logosA = [logoJs, logoReact, logoHTML, logoCSS, logoRedux, logoNode];
-const logosB = [logoEX, logoPostSql, logoFigma, logoGithub, logoXd, logoSass];
+const logosA = [
+  { name: "javascript", icon: logoJs },
+  { name: "react", icon: logoReact },
+  { name: "Html", icon: logoHTML },
+  { name: "Css", icon: logoCSS },
+  { name: "Redux js", icon: logoRedux },
+  { name: "Nodejs", icon: logoNode },
+];
+const logosB = [
+  { name: "Express js", icon: logoEX },
+  { name: "PostgreSQL", icon: logoPostSql },
+  { name: "Figma", icon: logoFigma },
+  { name: "GitHub", icon: logoGithub },
+  { name: "XD adobe", icon: logoXd },
+  { name: "Sass", icon: logoSass },
+];
 
 const fadeInAnimationVariants = {
   initial: {
@@ -32,13 +47,15 @@ const fadeInAnimationVariants = {
     },
   }),
 };
+//function to make icons animated
 
 export default function Skills({ darkMode }) {
   const ref = useRef(null);
+
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["0 1", "1.33 1"],
-  });
+  }); // to make appear skills section while you are scrolling
 
   return (
     <motion.div
@@ -50,46 +67,82 @@ export default function Skills({ darkMode }) {
         <div className={style.alignTittle}>
           <h1
             className={style.tittle}
-            style={{ color: darkMode ? "#0d2020" : "#9A6F9B" }}
+            style={{ color: darkMode ? "#0d2020" : "#9A6F9B" }} //change color font depends of the state dark or light
           >
             Skills
           </h1>
         </div>
         <div className={style.images}>
           {logosA.map((logo, index) => (
-            <motion.span
-              ref={ref}
-              target="_blank"
-              href={logo}
-              whileHover={{ scale: 1.1 }}
-              variants={fadeInAnimationVariants}
-              initial="initial"
-              whileInView="animate"
-              custom={Math.random()}
-              key={index}
-              className={style.logo}
-            >
-              <img className={style.picture} src={logo} alt="" />
-            </motion.span>
+            <>
+              <Tooltip // resource that hovers over icon skills
+                color="success"
+                placement="top"
+                content={
+                  <p
+                    style={{
+                      backgroundColor: "purple",
+                      borderRadius: "5px",
+                      padding: "5px",
+                    }}
+                  >
+                    {logo.name}
+                  </p>
+                }
+                key={index}
+              >
+                <motion.span
+                  ref={ref}
+                  target="_blank"
+                  href={logo}
+                  whileHover={{ scale: 1.1 }}
+                  variants={fadeInAnimationVariants}
+                  initial="initial"
+                  whileInView="animate"
+                  custom={Math.random()}
+                  key={index}
+                  className={style.logo}
+                >
+                  <img className={style.picture} src={logo.icon} alt="" />
+                </motion.span>
+              </Tooltip>
+            </>
           ))}
         </div>
         <div className={style.conainerAlineacion}>
           <div className={style.images}>
             {logosB.map((logo, index) => (
-              <motion.span
-                ref={ref}
-                target="_blank"
-                href={logo}
-                whileHover={{ scale: 1.1 }}
-                variants={fadeInAnimationVariants}
-                initial="initial"
-                whileInView="animate"
-                custom={Math.random()}
+              <Tooltip
+                color="success"
+                placement="bottom"
+                content={
+                  <p
+                    style={{
+                      backgroundColor: "purple",
+                      borderRadius: "5px",
+                      padding: "5px",
+                    }}
+                  >
+                    {logo.name}
+                  </p>
+                }
                 key={index}
-                className={style.logo}
               >
-                <img className={style.picture} src={logo} alt="" />
-              </motion.span>
+                <motion.span
+                  ref={ref}
+                  target="_blank"
+                  href={logo}
+                  whileHover={{ scale: 1.1 }}
+                  variants={fadeInAnimationVariants}
+                  initial="initial"
+                  whileInView="animate"
+                  custom={Math.random()}
+                  key={index}
+                  className={style.logo}
+                >
+                  <img className={style.picture} src={logo.icon} alt="" />
+                </motion.span>
+              </Tooltip>
             ))}
           </div>
         </div>
