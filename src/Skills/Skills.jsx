@@ -81,9 +81,10 @@ export default function Skills({ darkMode }) {
                 content={
                   <p
                     style={{
-                      backgroundColor: "purple",
+                      backgroundColor: "white",
                       borderRadius: "5px",
                       padding: "5px",
+                      color: "black",
                     }}
                   >
                     {logo.name}
@@ -118,9 +119,10 @@ export default function Skills({ darkMode }) {
                 content={
                   <p
                     style={{
-                      backgroundColor: "purple",
+                      backgroundColor: "white",
                       borderRadius: "5px",
                       padding: "5px",
+                      color: "black",
                     }}
                   >
                     {logo.name}

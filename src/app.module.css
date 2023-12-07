@@ -25,7 +25,7 @@ body {
 .App{
   height: 100%;
   width: 100vw;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .dark-mode {
@@ -73,7 +73,7 @@ h1 {
     justify-content: center;
     align-items: center;
     height: 700px;
-    border: 2px rgb(236, 198, 11) solid;
+    /* border: 2px rgb(236, 198, 11) solid; */
     margin-bottom: 5rem;
 
 
@@ -84,7 +84,7 @@ h1 {
     justify-content: center;
     align-items: center;
     height: 100%;
-    border: 5px rgb(20, 20, 185) solid;
+    /* border: 5px rgb(20, 20, 185) solid; */
     margin-bottom: 13rem; /* scroll-snap-align: center; */
 }
 
