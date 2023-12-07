@@ -8,7 +8,7 @@
     justify-self: center;
     width: 1350px;
     height: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
 }
 
@@ -18,19 +18,19 @@
     left: 50%;
     width: 100%;
     height: 100% ;
-    border: 1px solid rgb(71, 255, 178);
+    /* border: 1px solid rgb(71, 255, 178); */
 }
 
 .alineacionText{
     width: 800px;
-    border: 1px solid rgb(66, 19, 65);
+    /* border: 1px solid rgb(66, 19, 65); */
 }
 
 .imageAndText{
     display: flex;
     justify-content: center;
     gap: 2rem;
-    border: 1px solid #b364b2; 
+    /* border: 1px solid #b364b2;  */
     height: 100%;
 }
 
@@ -47,7 +47,7 @@ padding-block: 1rem;
 
 .alignTittle{
     margin-inline: 57px;
-    border: 1px solid rgb(146, 179, 100);
+    /* border: 1px solid rgb(146, 179, 100); */
 }
 
 
@@ -58,14 +58,14 @@ padding-block: 1rem;
         width: 100%;
         padding-inline: 1rem;
         height: 100%;
-        border: 1px solid rgb(149, 0, 255);
+        /* border: 1px solid rgb(149, 0, 255); */
 
     }
 
     .alineacionText {
         width: 100%;
         height: 100%;
-        border: 1px solid orange;
+        /* border: 1px solid orange; */
         text-align: center;
         
     }

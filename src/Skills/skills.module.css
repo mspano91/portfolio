@@ -5,7 +5,7 @@
     align-items: center;
     width: 1350px;
     height: 100%;
-    border: 3px solid rgb(159, 155, 76);
+    /* border: 3px solid rgb(159, 155, 76); */
 }
 
 .conainerAlineacion {
@@ -13,7 +13,7 @@
     flex-direction: column;
     width: 1350px;
     height: 100%;
-    border: 2px solid rgb(71, 255, 132);
+    /* border: 2px solid rgb(71, 255, 132); */
     /* animation: move;
     animation-duration: 1s; */
 }
@@ -29,7 +29,7 @@
 
 .alignTittle {
     margin-inline: 57px;
-    border: 1px solid rgb(179, 100, 161);
+    /* border: 1px solid rgb(179, 100, 161); */
 }
 
 .tittle {
@@ -42,7 +42,7 @@
     display: flex;
     justify-content: center;
     gap: 2rem;
-    border: 1px solid rgb(179, 100, 178);
+    /* border: 1px solid rgb(179, 100, 178); */
     height: 100%;
 }
 
