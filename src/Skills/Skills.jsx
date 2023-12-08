@@ -119,6 +119,7 @@ export default function Skills({ darkMode }) {
                 placement="bottom"
                 content={
                   <p
+                    className={style.tech}
                     style={{
                       backgroundColor: "white",
                       borderRadius: "5px",
