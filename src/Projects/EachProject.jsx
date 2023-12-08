@@ -1,12 +1,30 @@
 import style from "../Projects/eachProject.module.css";
 import videos from "../Projects/videos.js";
+import { useState } from "react";
+import ButtonPlus from "../Projects/ButtonPlus/ButtonPlus.jsx";
 
 export default function EachProject() {
+  const itemsPerPage = 1;
+  const [visibleVideos, setVisibleVideos] = useState(
+    videos.slice(0, itemsPerPage)
+  );
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const handleLoadMore = () => {
+    const nextPage = currentPage + 1;
+    const startIndex = (nextPage - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+    const newVisibleVideos = videos.slice(0, endIndex);
+
+    setVisibleVideos(newVisibleVideos);
+    setCurrentPage(nextPage);
+  };
+
   return (
     <div>
       <div className={style.carousel}>
         <div className={style.innerCarousel}>
-          {videos.map((video, index) => (
+          {visibleVideos.map((video, index) => (
             <div className={style.item}>
               <iframe
                 key={index}
@@ -21,13 +39,32 @@ export default function EachProject() {
                 <h2>{video.tittle}</h2>
                 <p>{video.description}</p>
                 <div className={style.links}>
-                  <button>Github</button>
-                  <button>Deploy</button>
+                  <a
+                    className={style.box}
+                    href={video.git1}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Github
+                  </a>
+
+                  <a
+                    className={style.box}
+                    href={video.deploy}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Deploy
+                  </a>
                 </div>
               </div>
             </div>
           ))}
         </div>
+      </div>
+      <div className={style.loadMore}>
+        <button onClick={handleLoadMore}>ButtonPlus</button>
+        <ButtonPlus />
       </div>
     </div>
   );

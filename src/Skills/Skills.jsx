@@ -54,7 +54,7 @@ export default function Skills({ darkMode }) {
 
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["0 1", "1.33 1"],
+    offset: ["0 27", "1.33 1"],
   }); // to make appear skills section while you are scrolling
 
   return (
@@ -80,6 +80,7 @@ export default function Skills({ darkMode }) {
                 placement="top"
                 content={
                   <p
+                    className={style.tech}
                     style={{
                       backgroundColor: "white",
                       borderRadius: "5px",

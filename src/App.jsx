@@ -4,6 +4,8 @@ import TittleSection from "./Tittle/TittleSection.jsx";
 import AboutMe from "./AboutMe/AboutMe.jsx";
 import Skills from "./Skills/Skills.jsx";
 import Projects from "./Projects/Projects.jsx";
+import Footer from "./Footer/Footer.jsx";
+import Scroller from "./Scroller/Scroller.jsx";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -27,6 +29,10 @@ function App() {
         <div className={style.containerFather}>
           <div className={style.container1}>
             <TittleSection darkMode={darkMode} />
+
+            <div className={style.containerScroller}>
+              <Scroller />
+            </div>
           </div>
 
           <div id="AboutMe" className={style.container2}>
@@ -38,6 +44,9 @@ function App() {
           </div>
           <div id="Projects" className={style.container4}>
             <Projects darkMode={darkMode} />
+          </div>
+          <div id="Footer" className={style.container4}>
+            <Footer darkMode={darkMode} />
           </div>
         </div>
       </div>
