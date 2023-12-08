@@ -12,14 +12,15 @@
 
 .alignTittle {
     width: 1350px;
-    /* margin-inline: 57px; */
-    /* border: 1px solid rgb(179, 100, 161); */
+    margin-inline: 57px;
+    border: 1px solid rgb(179, 100, 161);
 }
 
 .tittle {
     font-family: 'Syncopate', sans-serif;
     font-weight: lighter;
     padding-block: 1rem;
+    border: 1px solid rgb#e0920d;
 
 }
 
@@ -42,7 +43,13 @@
     color: #000000;
     transform: scale(1.45);
 }
-/* 
+
+
+
+
+
+
+
 @media (min-width: 769px) and (max-width: 900px) {
     .conainerAlineacion {
         width: 100%;
@@ -51,7 +58,9 @@
         width: 100%;
     }
 
-.tittle {
+.tittle {   
+font-size: 64px;
+    text-align: center;
     width: 100%;
 }
     .images {
@@ -70,15 +79,19 @@
                     }
         .alignTittle {
                 width: 100%;
+                margin-inline: 0px;
                 }
          .tittle {
+            font-size: 45px;
+                text-align: center;
                 width: 100%;
+              
          }
-                        
+
          .images {
              width: 100%;
          }
          .picture {
              width: 100%;
          }
-        } */
+        } 

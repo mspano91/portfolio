@@ -66,6 +66,11 @@
 
 }
 
+.tech{
+    font-family: 'Syncopate', sans-serif;
+    font-size: 20px;
+}
+
 .picture:hover {
     color: #000000;
     transform: scale(1.45);
@@ -95,9 +100,11 @@
     }
 
     .logo {
-        width: 100px
+        width: 100px;
+        height: 100px
     }
     .picture{
+        width: 50px;
 margin-inline: 0;
     }
     span{
