@@ -1,7 +1,7 @@
 import style from "../Projects/eachProject.module.css";
 import videos from "../Projects/videos.js";
 import { useState } from "react";
-import ButtonPlus from "../Projects/ButtonPlus.jsx";
+import ButtonPlus from "../Projects/ButtonPlus/ButtonPlus.jsx";
 
 export default function EachProject() {
   const itemsPerPage = 1;
