@@ -35,26 +35,28 @@ export default function AboutMe({ darkMode }) {
         <div className={style.imageAndText}>
           <div className={style.alineacionText}>
             <p className={style.text}>
-              As a lifelong student hailing from Buenos Aires, prior to delving
-              into the world of technology, I earned a degree in auctions and
-              commercial brokerage.
+              I am a Full-Stack Developer with a clear inclination towards
+              Front-End, where I am passionate about the fusion of design and
+              technology.
             </p>
             <p className={style.text}>
-              {" "}
-              I also pursued studies in marketing and relevant UX/UI and design
-              courses. Throughout the years, I've consistently worked on
-              improving my English and Italian.{" "}
+              As a lifelong resident of Buenos Aires, before delving into the
+              world of technology, I obtained a degree in auctions and
+              commercial mediation. I also completed studies in marketing and
+              relevant UX/UI design courses.
             </p>
             <p className={style.text}>
-              In 2023, I took a leap and underwent training in modern
-              application development at Fullstack Soy Henry Academy. I quickly
-              assimilated new concepts, bringing forth ambitious ideas and a
-              positive attitude to every challenge.
+              In 2022, I lived in Italy, specifically in Rome, where I learned
+              to speak Italian and significantly improved my English while
+              working in tourism. This journey served me well both personally
+              and professionally, encompassing everything that comes with
+              stepping out of one's comfort zone.
             </p>
             <p className={style.text}>
-              When I'm not coding, I usually engage in exercise, cook with
-              friends, perhaps draw, or simply read and enhance my language
-              skills.
+              In 2023, I took a leap and trained in modern Fullstack application
+              development at Soy Henry Academy. I quickly assimilated new
+              concepts, generated ambitious ideas, and maintained a positive
+              attitude towards every challenge.
             </p>
           </div>
           <div>

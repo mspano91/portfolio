@@ -5,7 +5,7 @@ import AboutMe from "./AboutMe/AboutMe.jsx";
 import Skills from "./Skills/Skills.jsx";
 import Projects from "./Projects/Projects.jsx";
 import Footer from "./Footer/Footer.jsx";
-import Scroller from "./Scroller/Scroller.jsx";
+import Dark from "../src/DarkMood/Dark.jsx";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -17,22 +17,12 @@ function App() {
   return (
     <>
       <div className={`${style.App} ${darkMode ? style["dark-mode"] : ""}`}>
-        {darkMode !== false ? (
-          <button className={style.btnMode} onClick={handleDarkMode}>
-            🌞Light mode
-          </button>
-        ) : (
-          <button className={style.btnMode} onClick={handleDarkMode}>
-            🌚 Dark Mode
-          </button>
-        )}
+        <div className={style.containerNav}>
+          <Dark darkMode={darkMode} onChangeDarkMode={handleDarkMode} />
+        </div>
         <div className={style.containerFather}>
           <div className={style.container1}>
             <TittleSection darkMode={darkMode} />
-
-            <div className={style.containerScroller}>
-              <Scroller />
-            </div>
           </div>
 
           <div id="AboutMe" className={style.container2}>
