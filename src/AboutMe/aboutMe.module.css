@@ -22,14 +22,15 @@
 }
 
 .alineacionText{
-    width: 800px;
+    width: 600px;
     border: 1px solid rgb(66, 19, 65);
+
 }
 
 .imageAndText{
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 5.1rem;
     border: 1px solid #b364b2; 
     height: 100%;
 }

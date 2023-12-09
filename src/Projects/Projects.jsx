@@ -22,29 +22,29 @@ export default function Projects({ darkMode }) {
   const projectComponent =
     windowWidth >= 750 ? <EachProject /> : <EachProjectResponsive />;
 
-  const ref = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["0 7", "1.33 1"],
-  });
+  // const ref = useRef(null);
+  // const { scrollYProgress } = useScroll({
+  //   target: ref,
+  //   offset: ["0 7", "1.33 1"],
+  // });
   // to make appear skills section while you are scrolling
 
   return (
     <div className={style.conainerAlineacion}>
-      <motion.div
+      {/* <motion.div
         style={{ scale: scrollYProgress, opacity: scrollYProgress }}
         ref={ref}
-      >
-        <div className={style.alignTittle}>
-          <h1
-            className={style.tittle}
-            style={{ color: darkMode ? "#0d2020" : "#9A6F9B" }}
-          >
-            Projects
-          </h1>
-        </div>
-        <div className={style.videoContainer}>{projectComponent}</div>
-      </motion.div>
+      > */}
+      <div className={style.alignTittle}>
+        <h1
+          className={style.tittle}
+          style={{ color: darkMode ? "#0d2020" : "#9A6F9B" }}
+        >
+          Projects
+        </h1>
+      </div>
+      <div className={style.videoContainer}>{projectComponent}</div>
+      {/* </motion.div> */}
     </div>
   );
 }

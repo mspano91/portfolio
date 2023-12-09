@@ -6,31 +6,31 @@ export default function TittleSection({ darkMode }) {
   return (
     <div>
       <div className={style.tittle}>
-        {/* <p className={style.presentation}>Hi everyone, my name is</p> */}
-        <p className={style.presentation}>working in progress..</p>
+        <p className={style.presentation}>Hi everyone, my name is</p>
+        {/* <p className={style.presentation}>working in progress..</p> */}
         <div className={style.colorName}>
-          {/* <h1 className={style.name}>Matias</h1>
+          <h1 className={style.name}>Matias</h1>
           <h1
-            style={{ color: darkMode ? "#9A6F9B" : "#0d2020" }}
+            style={{ color: darkMode ? "#0d2020" : "#9A6F9B" }}
             className={style.name}
           >
             Spano
           </h1>
-          <h1 className={style.name}>.</h1> */}
+          <h1 className={style.name}>.</h1>
         </div>
         <div className={style.Container}>
-          {/* <p
+          <p
             className={style.headline}
-            style={{ color: darkMode ? "#9A6F9B" : "#0d2020" }}
+            style={{ color: darkMode ? "#0d2020" : "#9A6F9B" }}
           >
             Front-End Developer
-          </p> */}
-          {/* <p
+          </p>
+          <p
             className={style.headline}
-            style={{ color: darkMode ? "#9A6F9B" : "#0d2020" }}
+            style={{ color: darkMode ? "#0d2020" : "#9A6F9B" }}
           >
             UXUI Designer.
-          </p> */}
+          </p>
         </div>
         <div className={style.containerBtns}>
           <Link smooth={true} duration={300} to="AboutMe" className={style.box}>

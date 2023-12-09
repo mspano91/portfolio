@@ -2,6 +2,8 @@ import style from "../Projects/eachProject.module.css";
 import videos from "../Projects/videos.js";
 import { useState } from "react";
 import ButtonPlus from "../Projects/ButtonPlus/ButtonPlus.jsx";
+import { useScroll, motion } from "framer-motion";
+import { useRef } from "react";
 
 export default function EachProject() {
   const itemsPerPage = 1;
@@ -20,48 +22,60 @@ export default function EachProject() {
     setCurrentPage(nextPage);
   };
 
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["0 3", "1.33 1"],
+  });
+
   return (
     <div>
-      <div className={style.carousel}>
-        <div className={style.innerCarousel}>
-          {visibleVideos.map((video, index) => (
-            <div className={style.item}>
-              <iframe
-                key={index}
-                width="560"
-                height="315"
-                src={video.video}
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-              <div className={style.description}>
-                <h2>{video.tittle}</h2>
-                <p>{video.description}</p>
-                <div className={style.links}>
-                  <a
-                    className={style.box}
-                    href={video.git1}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Github
-                  </a>
+      <motion.div
+        style={{ scale: scrollYProgress, opacity: scrollYProgress }}
+        ref={ref}
+      >
+        <div className={style.carousel}>
+          <div className={style.innerCarousel}>
+            {visibleVideos.map((video, index) => (
+              <div className={style.item}>
+                <iframe
+                  key={index}
+                  width="560"
+                  height="315"
+                  src={video.video}
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+                <div className={style.description}>
+                  <h2>{video.tittle}</h2>
+                  <p>{video.description}</p>
+                  <div className={style.links}>
+                    <a
+                      className={style.box}
+                      href={video.git1}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Github
+                    </a>
 
-                  <a
-                    className={style.box}
-                    href={video.deploy}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Deploy
-                  </a>
+                    <a
+                      className={style.box}
+                      href={video.deploy}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Deploy
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
+      </motion.div>
+
       <div className={style.loadMore}>
         <button onClick={handleLoadMore}>ButtonPlus</button>
         <ButtonPlus />
