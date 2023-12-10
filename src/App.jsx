@@ -14,10 +14,17 @@ function App() {
     setDarkMode(!darkMode);
   };
 
+  const handleGoToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" }); // Desplazar suavemente hacia la parte superior
+  };
+
   return (
     <>
       <div className={`${style.App} ${darkMode ? style["dark-mode"] : ""}`}>
         <div className={style.containerNav}>
+          <button className={style.btnHome} onClick={handleGoToTop}>
+            Home
+          </button>
           <Dark darkMode={darkMode} onChangeDarkMode={handleDarkMode} />
         </div>
         <div className={style.containerFather}>

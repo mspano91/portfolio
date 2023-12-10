@@ -120,10 +120,9 @@ export default function Skills({ darkMode }) {
                   <p
                     className={style.tech}
                     style={{
-                      backgroundColor: "white",
                       borderRadius: "5px",
                       padding: "5px",
-                      color: "black",
+                      color: "white",
                     }}
                   >
                     {logo.name}
