@@ -2,8 +2,8 @@ import style from "../Projects/projects.module.css";
 import EachProject from "../Projects/EachProject.jsx";
 import EachProjectResponsive from "../Projects/EachProjectResponsive.jsx";
 import React, { useState, useEffect } from "react";
-import { useScroll, motion } from "framer-motion";
-import { useRef } from "react";
+// import { useScroll, motion } from "framer-motion";
+// import { useRef } from "react";
 
 export default function Projects({ darkMode }) {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);

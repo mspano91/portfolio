@@ -18,7 +18,7 @@ const videos = [
     tittle: "Pokemon ApiRest",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. In obcaecati, asperiores saepe, magni laborum aperiam ipsa, neque vitae dolore voluptatem debitis? Sed harum illum repellat aperiam, temporibus facilis. Voluptas, iure.",
-    git1: "https://github.com/mspano91/Poke_Api",
+    git: "https://github.com/mspano91/Poke_Api",
     imagen: res2,
   },
   {
@@ -26,7 +26,7 @@ const videos = [
     tittle: "Ecommerce Shirts",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. In obcaecati, asperiores saepe, magni laborum aperiam ipsa, neque vitae dolore voluptatem debitis? Sed harum illum repellat aperiam, temporibus facilis. Voluptas, iure.",
-    git1: "https://github.com/mspano91/ShirtsEcommerce",
+    git: "https://github.com/mspano91/ShirtsEcommerce",
     imagen: res3,
   },
 ];

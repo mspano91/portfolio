@@ -1,7 +1,7 @@
 import style from "../Projects/eachProject.module.css";
 import videos from "../Projects/videos.js";
 import { useState } from "react";
-import ButtonPlus from "../Projects/ButtonPlus/ButtonPlus.jsx";
+
 import { useScroll, motion } from "framer-motion";
 import { useRef } from "react";
 
@@ -22,44 +22,71 @@ export default function EachProject() {
     setCurrentPage(nextPage);
   };
 
-  const ref = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["0 3", "1.33 1"],
-  });
+  console.log(videos.length);
+
+  // const ref = useRef(null);
+  // const { scrollYProgress } = useScroll({
+  //   target: ref,
+  //   offset: ["0 3", "1.33 1"],
+  // });
 
   return (
     <div>
-      <motion.div
+      {/* <motion.div
         style={{ scale: scrollYProgress, opacity: scrollYProgress }}
         ref={ref}
-      >
-        <div className={style.carousel}>
-          <div className={style.innerCarousel}>
-            {visibleVideos.map((video, index) => (
-              <div className={style.item}>
-                <iframe
-                  key={index}
-                  width="560"
-                  height="315"
-                  src={video.video}
-                  title="YouTube video player"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-                <div className={style.description}>
-                  <h2>{video.tittle}</h2>
-                  <p>{video.description}</p>
-                  <div className={style.links}>
+      > */}
+      <div className={style.carousel}>
+        <div className={style.innerCarousel}>
+          {visibleVideos.map((video, index) => (
+            <div className={style.item}>
+              <iframe
+                key={index}
+                width="560"
+                height="315"
+                src={video.video}
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+              <div className={style.description}>
+                <h2>{video.tittle}</h2>
+                <p>{video.description}</p>
+                <div className={style.links}>
+                  {video.git && (
+                    <a
+                      className={style.box}
+                      href={video.git}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Github
+                    </a>
+                  )}
+
+                  {video.git2 && (
+                    <a
+                      className={style.box}
+                      href={video.git2}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Git Front
+                    </a>
+                  )}
+
+                  {video.git1 && (
                     <a
                       className={style.box}
                       href={video.git1}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Github
+                      Git Back
                     </a>
+                  )}
 
+                  {video.deploy && (
                     <a
                       className={style.box}
                       href={video.deploy}
@@ -68,17 +95,22 @@ export default function EachProject() {
                     >
                       Deploy
                     </a>
-                  </div>
+                  )}
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
-      </motion.div>
-
+      </div>
+      {/* </motion.div> */}
       <div className={style.loadMore}>
-        <button onClick={handleLoadMore}>ButtonPlus</button>
-        <ButtonPlus />
+        {videos.length < 3 ? (
+          <button className={style.moreBtn}>-</button>
+        ) : (
+          <button className={style.moreBtn} onClick={handleLoadMore}>
+            +
+          </button>
+        )}
       </div>
     </div>
   );

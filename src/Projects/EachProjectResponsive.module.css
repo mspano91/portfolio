@@ -20,14 +20,18 @@
 }
 
 .links{
-    margin-block: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-block: 0px;
+    height: 100%;
+
+
 }
 
 .box {
-    border: 1px solid white;
+    /* border: 1px solid white; */
     padding-inline: 1rem;
-    
-    margin-top: 3rem;
+    margin-top: 1rem;
     cursor: pointer;
     align-self: center;
     font-family: 'Gravitas One', serif;
@@ -44,4 +48,22 @@
     /* scale: 1.09; */
     transform: scale(1.10);
     box-shadow: 0 0 5px white;
+}
+
+.moreBtn {
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 20px;
+    font-size: 36px;
+    box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.333);
+
+}
+.loadMore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid pink */
 }

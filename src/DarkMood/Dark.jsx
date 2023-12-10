@@ -7,7 +7,7 @@ export default function Dark({ darkMode, onChangeDarkMode }) {
   };
 
   return (
-    <div>
+    <div className={style.conainerSwitch}>
       <label className={style.switch}>
         <input
           type="checkbox"
