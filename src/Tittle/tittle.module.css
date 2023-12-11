@@ -15,6 +15,9 @@
         font-size: 65px;
 }
 
+
+
+
 .colorName{
     display: flex;
     flex-direction: row;
@@ -44,11 +47,22 @@
 }
 
 .containerBtns{
-    display: flex;
+    display: block;
     /* border: 1px solid white; */
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 50px;
-    margin-bottom: .5rem;
+    margin-top: 2rem;
+}
+
+.containerCv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    width: 200px;
+        height: 100px;
 }
 
 .box{
@@ -72,12 +86,27 @@
     box-shadow: 0 0 5px white;
 }
 
+.boxCv {
+    /* border: 1px solid white; */
+    padding-inline: 1rem;
+
+    cursor: pointer;
+    align-self: center;
+    font-family: 'Gravitas One', serif;
+    font-size: 30px;
+    transition: transform 1.8s ease;
+    text-decoration: none;
+    color: white;
+}
 
 
 @media (max-width:320px)   {
 
     .headline{
         font-size: 10px;
+    }
+    .container{
+        padding-block: 0px;
     }
     .name{
         font-size: 45px;
@@ -88,55 +117,49 @@
     }
 .containerBtns {
     display: block;
-   padding-bottom: 9rem;
+   /* padding-bottom: 9rem; */
    margin-top: 1rem; 
    width: 100%;
 }
 }
 
 @media (max-width:600px)   {
-
-.headline{
-font-size: 25px;
-    }
-
-.tittle{
-    /* width: 200px; */
-text-align: center;
-}
-.Container{
-padding-block: 1rem;
-
-}
-
-.ContainerPicture {
-    width: 150px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    }
-
-    .ContainerPicture img{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        object-fit: cover;
-        width: 200px;
-    }
-        .containerBtns {
-            display: block;
-            padding-bottom: 9rem;
+        .container {
+                padding-block: 0px;
+            }
+    .headline {
+            font-size: 25px;
+            padding-block: 0px;
+        }
+    
+        .name {
+            font-size: 45px;
             width: 100%;
         }
+    
+        .presentation {
+            font-size: 20px;
+        }
 
-        .box{
+.tittle{
+    display: flex;
+    flex-direction: column;
+text-align: center;
+justify-content: center;
+align-items: center;
+}
 
-            display: block;
-            border: none;
-            margin-block: 1rem;
 
+.containerBtns {
+    display: block;
+    /* padding-bottom: 9rem; */
+    width: 100%;
+}
+
+.box{
+display: block;
+border: none;
+margin-block: 1rem
        }
            .colorName {
                display: flex;
@@ -149,6 +172,8 @@ padding-block: 1rem;
 @media (max-width:800px) {
 .tittle {
         text-align: center;
+            justify-content: center;
+            align-items: center;
     }
 .ContainerPicture {
     width: 200px;
@@ -172,6 +197,8 @@ padding-block: 1rem;
 @media (max-width:1000px) {
 .tittle {
         text-align: center;
+            justify-content: center;
+            align-items: center;
     }
 .ContainerPicture {
     width: 200px;

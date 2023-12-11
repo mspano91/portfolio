@@ -1,69 +1,62 @@
-.switch {
-    --button-width: 2em;
-    --button-height: 1em;
-    --toggle-diameter: 1em;
-    --button-toggle-offset: calc((var(--button-height) - var(--toggle-diameter)) / 2);
-    --toggle-shadow-offset: 10px;
-    --toggle-wider: 3em;
-    --color-grey: #4BAFAF;
-    --color-green: #9A6F9B;
-}
-
 .conainerSwitch{
     position: fixed;
     transform: translate(-50%,-50%) ;
     left: 80%;
+    top: 5%;
     /* border: 1px solid rgb(154, 66, 186); */
 }
 
-.slider {
-    display: inline-block;
-    width: var(--button-width);
-    height: var(--button-height);
-    background-color: var(--color-grey);
-    border-radius: calc(var(--button-height) / 2);
+
+/* The switch - the box around the slider */
+.switch {
+    font-size: 17px;
     position: relative;
-    transition: 0.3s all ease-in-out;
-}
-
-.slider::after {
-    content: "";
     display: inline-block;
-    width: var(--toggle-diameter);
-    height: var(--toggle-diameter);
-    background-color: #fff;
-    border-radius: calc(var(--toggle-diameter) / 2);
+    width: 3.5em;
+    height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
     position: absolute;
-    top: var(--button-toggle-offset);
-    transform: translateX(var(--button-toggle-offset));
-    box-shadow: var(--toggle-shadow-offset) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
-    transition: 0.3s all ease-in-out;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(182, 182, 182);
+    transition: .4s;
+    border-radius: 10px;
 }
 
-.switch input[type="checkbox"]:checked+.slider {
-    background-color: var(--color-green);
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 8px;
+    left: 0.3em;
+    bottom: 0.3em;
+    transform: rotate(270deg);
+    background-color: rgb(255, 255, 255);
+    transition: .4s;
 }
 
-.switch input[type="checkbox"]:checked+.slider::after {
-    transform: translateX(calc(var(--button-width) - var(--toggle-diameter) - var(--button-toggle-offset)));
-    box-shadow: calc(var(--toggle-shadow-offset) * -1) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
-
+.switch input:checked+.slider {
+    background-color: #774f7c;
 }
 
-.switch input[type="checkbox"] {
-    display: none;
+.switch input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
 }
 
-.switch input[type="checkbox"]:active+.slider::after {
-    width: var(--toggle-wider);
-}
-
-.switch input[type="checkbox"]:checked:active+.slider::after {
-    transform: translateX(calc(var(--button-width) - var(--toggle-wider) - var(--button-toggle-offset)));
-}
-
-
-@media (max-width:320px),
-(max-width:800px) {
-
+.switch input:checked+.slider:before {
+    transform: translateX(1.5em);
 }
