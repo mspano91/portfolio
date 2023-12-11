@@ -1,6 +1,7 @@
 import React from "react";
 import style from "../Tittle/tittle.module.css";
 import { Link } from "react-scroll";
+import CV from "../Tittle/CV.jsx";
 
 export default function TittleSection({ darkMode }) {
   return (
@@ -50,6 +51,10 @@ export default function TittleSection({ darkMode }) {
           <Link smooth={true} duration={300} to="Contact" className={style.box}>
             Contact
           </Link>
+        </div>
+        <div className={style.containerCv}>
+          <span className={style.boxCv}>CV</span>
+          <CV />
         </div>
       </div>
     </div>
