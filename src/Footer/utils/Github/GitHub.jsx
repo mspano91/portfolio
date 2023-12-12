@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../GitHub/gitHub.module.css";
+import style from "../Github/gitHub.module.css";
 
 export default function GitHub() {
   return (
