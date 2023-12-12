@@ -2,9 +2,10 @@ import React from "react";
 import style from "../Linkedin/linkedin.module.css";
 
 export default function Linkdin() {
+  const linkedinLink = "https://www.linkedin.com/in/matias-spano-102b24116/";
   return (
     <div>
-      <button className={style.Btn}>
+      <a href={linkedinLink} className={style.Btn}>
         <span className={style.svgContainer}>
           <svg
             viewBox="0 0 448 512"
@@ -17,7 +18,7 @@ export default function Linkdin() {
           </svg>
         </span>
         <span className={style.BG}></span>
-      </button>
+      </a>
     </div>
   );
 }
