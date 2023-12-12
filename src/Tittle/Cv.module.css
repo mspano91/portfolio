@@ -18,6 +18,13 @@
     fill: rgb(214, 178, 255);
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    /* Añade esto si deseas mantener el cursor como puntero al pasar el ratón */
+    /* Otros estilos que desees anular o cambiar */
+}
 .icon2 {
     width: 18px;
     height: 5px;
