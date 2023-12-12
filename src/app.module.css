@@ -5,6 +5,7 @@
 }
 
 html{
+
   /* scroll-snap-type: y mandatory; */
   scroll-behavior: smooth;
 
@@ -15,8 +16,9 @@ body {
   display: flex;
   place-items: center;
   color: #ffffff;
-    background-color: #171717;
+  background-color: #171717;
   overflow-x: hidden;
+  height: 100%;
 }
 
 .App{
@@ -47,23 +49,42 @@ h1 {
   gap: 5rem;
   padding-top: 4rem;
   margin-bottom: 13rem;
-  /* border: 2px blue solid; */
+  border: 2px blue solid;
   /* scroll-snap-align: center; */
-      animation: move;
-        animation-duration: 1s;
+  animation: move;
+  animation-duration: 1s;
 }
 
 .containerNav{
-  background-color: #17171728;
+  /* background-color: #17171728; */
   display: flex;
   flex-direction: row;
-  position: fixed;
+  /* position: fixed; */
   z-index: 1111;
   width: 100%;
   height: 100px;
   justify-content: center;
   align-items: center;
+  border: 1px solid rgb(154, 66, 186);
 }
+
+
+.btnHome {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  font-family: 'Syncopate', sans-serif;
+  cursor: pointer;
+  height: 1em;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  left: 20%;
+  /* border: 1px solid red; */
+
+}
+
+
 
 @keyframes move {
   from {
@@ -76,16 +97,15 @@ h1 {
 }
    
 .container2{
+  /* width: 100%; */
     padding-top: 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 900px;
-    /* border: 2px rgb(236, 198, 11) solid; */
+    border: 2px rgb(236, 138, 11) solid;
     margin-bottom: 5rem;
-  padding-top: 1rem;
-
-    /* scroll-snap-align: center; */
+    padding-top: 1rem;
 }
 .container3{
       padding-top: 6rem;
@@ -93,8 +113,12 @@ h1 {
     justify-content: center;
     align-items: center;
     height: 100%;
-    /* border: 5px rgb(20, 20, 185) solid; */
+    border: 5px rgb(20, 20, 185) solid;
     margin-bottom: 13rem; /* scroll-snap-align: center; */
+}
+
+.container4{
+    border: 1px rgb(53, 197, 63) solid;
 }
 
 .container5{
@@ -102,7 +126,7 @@ h1 {
   display: flex;
   justify-content: center;
   height: 100%;
-  border-top: 1px rgba(255, 255, 255, 0.27) solid;
+  border-top: 1px rgba(198, 20, 20, 0.27) solid;
 }
 
 .btnMode{
@@ -114,28 +138,15 @@ h1 {
   cursor: pointer;
 }
 
-.btnHome{
-    border: none;
-    outline: none;
-    background-color: transparent;
-    color: white;
-    font-family: 'Syncopate', sans-serif;
-    cursor: pointer;
-    height: 1em;
-    position: fixed;
-    transform: translate(-50%, -50%);
-    left: 20%;
-    /* border: 1px solid red; */
-
-}
 
 
-@media (max-width:320px),
+
+@media (min-width:320px) and
 (max-width:800px) {
 
   .containerNav{
     width: 100%;
-    background-color: #1717175a;
+    /* background-color: #1717175a; */
       height: 100px;
   }
 
@@ -146,7 +157,7 @@ h1 {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    padding-top: 7rem;
+    padding-top: 1rem;
 
   }
 
@@ -165,13 +176,13 @@ h1 {
   
     }
         .container5 {
-              height: 100%;
-                  display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    align-items: center;
-                    padding-inline: 1rem;
-                      text-align: center;
+          height: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding-inline: 1rem;
+          text-align: center;
               }
    
 
@@ -181,7 +192,7 @@ h1 {
     .containerNav {
         width: 100%;
         height: 100px;
-        background-color: #171717;
+        /* background-color: #171717; */
             /* border: 1px solid red; */
       }
 .container1 {
@@ -217,27 +228,11 @@ h1 {
 }
 }
 
-@media (min-width: 900px) and (max-width: 1200px) {
-  .container5 {
-    width: 100%;
-  }
-  .container4 {
-    width: 100%;
-  }
-  .container3 {
-    width: 100%;
-  }
-  .container2 {
-    width: 100%;
-  }
-  .container1 {
-    width: 100%;
-  }
-}
 
 @media (min-width: 900px) and (max-width: 1200px) {
     .container5 {
         width: 100%;
+        height: 100%;
       }
     
       .container4 {

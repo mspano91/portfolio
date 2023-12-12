@@ -17,8 +17,8 @@
 .item{
     display: flex;
     flex-direction: row;
-    width: 1200px;
-    /* border: 2px solid blue; */
+    width: 1350px;
+    border: 2px solid blue;
     margin-block: 1rem;
    
 }
