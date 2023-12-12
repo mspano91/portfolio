@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./Cv.module.css";
-import cv from "../tittle/cv/spanoCv.pdf";
+import cv from "../Tittle/cv/spanoCv.pdf";
 
 export default function CV() {
   return (
