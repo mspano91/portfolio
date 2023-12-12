@@ -120,28 +120,16 @@
     
 }} 
 
-/* .carousel {
-    border: 2px solid rgb(215, 129, 80);
-} */
-
-/* 
-.innerCarousel{
-    display: flex;
-    background-color: aquamarine;
-    width: 1420px;
-
-}
-
-
-.carousel{
-    cursor: grab;
-    overflow: hidden;
-    background-color: pink;
-}
-
-.item{
-    padding: 50px;
-
-}
-
- */
+@media (min-width: 900px) and (max-width: 1200px) {
+        .description {
+                width: 600px
+            }
+            .innerCarousel {
+                width: 100%
+                }
+.item {
+    display: block;
+    height: 100%;
+    width: 100%;
+    
+}} 

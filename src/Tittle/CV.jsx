@@ -1,10 +1,20 @@
 import React from "react";
 import style from "../Tittle/Cv.module.css";
+import cv from "../Tittle/cv/SpanoCV.pdf";
 
 export default function CV() {
+  const handleDownload = () => {
+    // Crea un elemento "a" para simular un clic en un enlace de descarga
+    const link = document.createElement("a");
+    link.href = cv; // Asigna la ruta de tu currículum
+    link.download = "miCV.pdf"; // Puedes cambiar el nombre del archivo aquí
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <div>
-      <button className={style.Btn}>
+      <button onClick={handleDownload} className={style.Btn}>
         <svg
           className={style.svgIcon}
           viewBox="0 0 384 512"

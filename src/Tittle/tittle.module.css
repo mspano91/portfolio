@@ -224,3 +224,36 @@ margin-block: 1rem
 }
 
 }
+
+
+@media (min-width: 769px) and (max-width: 1400px) {
+    .tittle {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .ContainerPicture {
+            width: 200px;
+            height: 200px;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .ContainerPicture img {
+            object-fit: cover;
+            width: 200px;
+        }
+    
+        .colorName {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .box {
+    
+            font-size: 25px;
+    
+        }
+}

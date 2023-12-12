@@ -28,7 +28,7 @@ body {
 .dark-mode {
   color: #ffffff;
   height: 100%;
-    background-color: #4BAFAF;
+  background-color: #4BAFAF;
   transition: background-color 0.5s, color 0.5s;
 
 }
@@ -81,7 +81,7 @@ h1 {
     justify-content: center;
     align-items: center;
     height: 900px;
-    border: 2px rgb(236, 198, 11) solid;
+    /* border: 2px rgb(236, 198, 11) solid; */
     margin-bottom: 5rem;
   padding-top: 1rem;
 
@@ -93,8 +93,16 @@ h1 {
     justify-content: center;
     align-items: center;
     height: 100%;
-    border: 5px rgb(20, 20, 185) solid;
+    /* border: 5px rgb(20, 20, 185) solid; */
     margin-bottom: 13rem; /* scroll-snap-align: center; */
+}
+
+.container5{
+  padding-block: 1rem;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  border-top: 1px rgba(255, 255, 255, 0.27) solid;
 }
 
 .btnMode{
@@ -156,6 +164,15 @@ h1 {
       height: 100%;
   
     }
+        .container5 {
+              height: 100%;
+                  display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    padding-inline: 1rem;
+                      text-align: center;
+              }
    
 
 }
@@ -168,7 +185,7 @@ h1 {
             /* border: 1px solid red; */
       }
 .container1 {
-        padding-top: 5rem;
+    padding-top: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -189,5 +206,53 @@ h1 {
     width: 100%;
 
   }
+ .container5 {
+  height: 100%;
+      display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+}
 }
 
+@media (min-width: 900px) and (max-width: 1200px) {
+  .container5 {
+    width: 100%;
+  }
+  .container4 {
+    width: 100%;
+  }
+  .container3 {
+    width: 100%;
+  }
+  .container2 {
+    width: 100%;
+  }
+  .container1 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+    .container5 {
+        width: 100%;
+      }
+    
+      .container4 {
+        width: 100%;
+      }
+    
+      .container3 {
+        width: 100%;
+      }
+    
+      .container2 {
+        width: 100%;
+      }
+    
+      .container1 {
+        width: 100%;
+      }
+}

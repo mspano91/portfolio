@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import style from "../Projects/EachProjectResponsive.module.css";
-import videos from "../Projects/videos.js";
+import style from "../ResponsiveProjects/EachProjectResponsive.module.css";
+import videos from "../videos.js";
 
 export default function EachProjectResponsive() {
   const itemsPerPage = 1;

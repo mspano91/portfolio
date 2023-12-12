@@ -1,0 +1,130 @@
+.containerFooter{
+    width: 100%;
+    height: 300px;
+    /* border: 1px solid rgb(57, 57, 160); */
+    /* border-top: 1px rgba(255, 255, 255, 0.276); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.ContainerLogos {
+    align-items: center;
+    width: 1350px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    padding-top: 1rem;
+    gap: 1rem;
+    padding-block: 1rem;
+}
+
+.ContainerLogos p {
+    font-family: 'Syncopate', sans-serif;
+    text-align: center;
+}
+
+.containerInfo{
+        width: 1350px;
+        /* border: 1px solid white; */
+
+}
+
+.sign {
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: right;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    padding-bottom: 2rem;
+
+}
+
+.description {
+    /* border: 1px solid purple; */
+    width: 600px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    padding-block: 1rem;
+}
+
+
+@media (min-width:319px) and
+(max-width:760px) {
+    .containerFooter{
+        display: block;
+        width: 100%;
+    }
+.containerInfo {
+    width: 100%;
+    padding-inline: 1rem;
+    display: block;
+}
+.description {
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+}
+    
+    .ContainerLogos{width: 100%;
+        padding-inline:1rem;
+    }
+}
+
+@media (min-width:760px) and (max-width:900px) {
+    .containerFooter {
+            display: block;
+            width: 100%;
+        }
+    
+        .containerInfo {
+            display: block;
+            width: 100%;
+            padding-inline: 3rem;
+        }
+    
+        .description {
+            display: flex;
+            flex-direction: row;
+            /* text-align: left; */
+            /* justify-content:center;
+                        align-items: center; */
+            width: 100%;
+        }
+    
+        .ContainerLogos {
+            width: 100%;
+            padding-inline: 3rem;
+        }
+}
+
+
+@media (min-width: 900px) and (max-width: 1200px) {
+    .containerFooter {
+        display: block;
+        width: 100%;
+    }
+
+    .containerInfo {
+        display: block;
+        width: 100%;
+        padding-inline: 3rem;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: row;
+        /* text-align: left; */
+        /* justify-content:center;
+                    align-items: center; */
+        width: 100%;
+    }
+
+    .ContainerLogos {
+        width: 100%;
+        padding-inline: 3rem;
+    }
+}

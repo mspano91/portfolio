@@ -42,7 +42,7 @@ function App() {
           <div id="Projects" className={style.container4}>
             <Projects darkMode={darkMode} />
           </div>
-          <div id="Footer" className={style.container4}>
+          <div id="Contact" className={style.container5}>
             <Footer darkMode={darkMode} />
           </div>
         </div>

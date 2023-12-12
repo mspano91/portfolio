@@ -1,9 +1,7 @@
 import style from "../Projects/projects.module.css";
-import EachProject from "../Projects/EachProject.jsx";
-import EachProjectResponsive from "../Projects/EachProjectResponsive.jsx";
+import EachProjectResponsive from "./ResponsiveProjects/EachProjectResponsive.jsx";
+import EachProject from "../Projects/EachProject/EachProject.jsx";
 import React, { useState, useEffect } from "react";
-// import { useScroll, motion } from "framer-motion";
-// import { useRef } from "react";
 
 export default function Projects({ darkMode }) {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -22,19 +20,8 @@ export default function Projects({ darkMode }) {
   const projectComponent =
     windowWidth >= 750 ? <EachProject /> : <EachProjectResponsive />;
 
-  // const ref = useRef(null);
-  // const { scrollYProgress } = useScroll({
-  //   target: ref,
-  //   offset: ["0 7", "1.33 1"],
-  // });
-  // to make appear skills section while you are scrolling
-
   return (
     <div className={style.conainerAlineacion}>
-      {/* <motion.div
-        style={{ scale: scrollYProgress, opacity: scrollYProgress }}
-        ref={ref}
-      > */}
       <div className={style.alignTittle}>
         <h1
           className={style.tittle}
@@ -44,7 +31,6 @@ export default function Projects({ darkMode }) {
         </h1>
       </div>
       <div className={style.videoContainer}>{projectComponent}</div>
-      {/* </motion.div> */}
     </div>
   );
 }
