@@ -1,11 +1,11 @@
 import React from "react";
 import style from "./CvButton.module.css";
-import cvFile from "./cv/spanoCv.pdf";
+import cvFile1 from "./cv/spanoCv.pdf";
 
 export default function CV() {
   return (
     <div>
-      <a className={style.Btn} download href={cvFile}>
+      <a className={style.Btn} download href={cvFile1}>
         <svg
           className={style.svgIcon}
           viewBox="0 0 384 512"
