@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./tittle.module.css";
 import { Link } from "react-scroll";
-import CV from "./CV.jsx";
+import CV from "./CvButton.jsx";
 
 export default function TittleSection({ darkMode }) {
   return (
