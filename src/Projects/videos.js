@@ -25,7 +25,7 @@ const videos = [
     video: "https://www.youtube.com/embed/zMBfu6kXLPY",
     tittle: "Ecommerce Shirts",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. In obcaecati, asperiores saepe, magni laborum aperiam ipsa, neque vitae dolore voluptatem debitis? Sed harum illum repellat aperiam, temporibus facilis. Voluptas, iure.",
+      "I developed an E-commerce platform for football shirts using just vanilla JavaScript, basic HTML, and CSS. The home page was meticulously designed on Figma. This project served as a practical exercise, and I incorporated LocalStorage to ensure cart persistence. Additionally, users have the ability to filter products and employ a search bar for easy navigation.",
     git: "https://github.com/mspano91/ShirtsEcommerce",
     imagen: res3,
   },

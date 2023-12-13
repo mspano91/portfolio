@@ -8,7 +8,7 @@
     position: relative;
     justify-self: center;
     height: 700px;
-    border: 1px solid rgb(64, 129, 170);
+    /* border: 1px solid rgb(64, 129, 170); */
 }
 
 .conainerAlineacion{
@@ -22,7 +22,7 @@
 
 .alineacionText{
     /* width: 900px; */
-    border: 1px solid rgb(66, 19, 65);
+    /* border: 1px solid rgb(66, 19, 65); */
     margin-right: 3rem;
 }
 
@@ -32,7 +32,7 @@
     justify-content: center;
     padding-right: 4.4rem;
     padding-top:3rem;
-    border: 1px solid #b364b2; 
+    /* border: 1px solid #b364b2;  */
     height: 100%;
     width: 1350px;
 }
@@ -47,12 +47,12 @@ padding-block: 1rem;
     font-family: 'Inter', sans-serif;
     padding-block: 1rem;
     width: 800px;
-    border: 1px solid rgb(146, 179, 100);
+    /* border: 1px solid rgb(146, 179, 100); */
 }
 
 .alignTittle{
     width: 1350px;
-    border: 1px solid rgb(146, 179, 100);
+    /* border: 1px solid rgb(146, 179, 100); */
 }
 
 
@@ -197,7 +197,7 @@ padding-block: 1rem;
         align-items: center;
     }
     .tittle{
-                text-align: center;
+        text-align: center;
     }
  }
  

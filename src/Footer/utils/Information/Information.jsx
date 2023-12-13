@@ -13,7 +13,7 @@ export default function Information() {
         </p>
       </div>
       <div className={style.sign}>
-        <p>Develped and designed by Spano Matias, © Copyright 2023. </p>
+        <p>Developed and designed by Spano Matias, © Copyright 2023. </p>
       </div>
     </div>
   );

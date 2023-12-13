@@ -13,14 +13,14 @@
 .alignTittle {
     width: 1350px;
     margin-inline: 57px;
-    border: 1px solid rgb(179, 100, 161);
+    /* border: 1px solid rgb(179, 100, 161); */
 }
 
 .tittle {
     font-family: 'Syncopate', sans-serif;
     font-weight: lighter;
     padding-block: 1rem;
-    border: 1px solid rgb#e0920d;
+    /* border: 1px solid rgb#e0920d; */
 
 }
 
@@ -28,7 +28,7 @@
     display: flex;
     justify-content: center;
     gap: 2rem;
-    border: 1px solid rgb(211, 189, 44);
+    /* border: 1px solid rgb(211, 189, 44); */
     height: 100%;
 }
 
