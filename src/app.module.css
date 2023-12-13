@@ -49,7 +49,7 @@ h1 {
   gap: 5rem;
   padding-top: 4rem;
   margin-bottom: 13rem;
-  border: 2px blue solid;
+  /* border: 2px blue solid; */
   /* scroll-snap-align: center; */
   animation: move;
   animation-duration: 1s;
@@ -65,7 +65,7 @@ h1 {
   height: 100px;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgb(154, 66, 186);
+  /* border: 1px solid rgb(154, 66, 186); */
 }
 
 
@@ -103,7 +103,7 @@ h1 {
     justify-content: center;
     align-items: center;
     height: 900px;
-    border: 2px rgb(236, 138, 11) solid;
+    /* border: 2px rgb(236, 138, 11) solid; */
     margin-bottom: 5rem;
     padding-top: 1rem;
 }
@@ -113,20 +113,20 @@ h1 {
     justify-content: center;
     align-items: center;
     height: 100%;
-    border: 5px rgb(20, 20, 185) solid;
+    /* border: 5px rgb(20, 20, 185) solid; */
     margin-bottom: 13rem; /* scroll-snap-align: center; */
 }
 
-.container4{
+/* .container4{
     border: 1px rgb(53, 197, 63) solid;
-}
+} */
 
 .container5{
   padding-block: 1rem;
   display: flex;
   justify-content: center;
   height: 100%;
-  border-top: 1px rgba(198, 20, 20, 0.27) solid;
+  /* border-top: 1px rgba(198, 20, 20, 0.27) solid; */
 }
 
 .btnMode{

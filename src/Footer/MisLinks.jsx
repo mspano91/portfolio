@@ -3,6 +3,7 @@ import style from "../Footer/Footer.module.css";
 import Github from "./utils/Github/GitHub.jsx";
 import Linkdin from "./utils/Linkedin/Linkedin.jsx";
 import Information from "../Footer/utils/Information/Information.jsx";
+import Behance from "../Footer/utils/Behance/Behance.jsx";
 
 export default function MisLinks() {
   return (
@@ -10,7 +11,8 @@ export default function MisLinks() {
       <div className={style.ContainerLogos}>
         <Github />
         <Linkdin />
-        <p>Contact me!</p>
+        <Behance />
+        <p className={style.tittle1}>Contact me!</p>
       </div>
       <div className={style.containerInfo}>
         <Information />
