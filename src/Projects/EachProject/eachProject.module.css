@@ -75,6 +75,7 @@
         font-family: 'Syncopate', sans-serif;
     }
 .description p{
+        font-size: 17px;
         margin-block: 1rem;
         font-family: 'Inter', sans-serif;
         height: 180px;
