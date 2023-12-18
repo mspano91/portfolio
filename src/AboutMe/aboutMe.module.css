@@ -31,9 +31,6 @@
     flex-direction: row;
     justify-content: center;
     padding-right: 4.4rem;
-    padding-top:3rem;
-    /* border: 1px solid #b364b2;  */
-    height: 100%;
     width: 1350px;
 }
 
@@ -73,7 +70,7 @@ padding-block: 1rem;
         .text {
             width: 100%;
             font-size: 15px;
-            padding-inline: 1rem;
+            /* padding-inline: 1rem; */
         }
     
         .alignTittle {
@@ -83,10 +80,11 @@ padding-block: 1rem;
     
     .alineacionText {
         width: 100%;
-        height: 100%;
+        padding-inline: 1em;
+        /* height: 100%; */
         margin-right: 0px;
         text-align: center;
-        
+        padding-inline: 2em;
     }
 
 
@@ -97,7 +95,7 @@ padding-block: 1rem;
             align-items: center;
             width: 100%;
             padding-right: 0rem;
-    
+            padding-top: 0rem;
         }
     
         .tittle {
@@ -109,85 +107,40 @@ padding-block: 1rem;
 
 
 
-
+/* 
 
  @media (min-width: 800px) and (max-width: 900px) {
-    .alineacionText {
-            margin-top: 30%;
-            width: 100%;
-            margin-right: 0px;
-        }
-    
-        .imageAndText {
+.alineacionText {
+        padding-bottom: 2rem;
+        margin-right: 0px;
+        margin-top: 0;
+    }
 
+    .imageAndText {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
-        padding-right: 0rem;
-
-
-        }
-
-     .text {
-            width: 100%;
-                font-size: 15px;
-                padding-inline: 2rem;
-     }
-
-
-        .conainerAbout {
-            height: 100%;
-            width: 100%;
-        }
-    
-        .alignTittle {
-            margin-inline: 0px;
-        }
-    
-    
-        .colorName {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
- }
- 
-
-
-
- @media (min-width: 900px) and (max-width: 1500px) {
-.alineacionText {
-        
-        margin-right: 0px;
-    }
-
-    .imageAndText {
-        display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            padding-right: 0rem;
+        padding-top: 0rem;
+        padding-inline: 2rem;
     }
 
     .text {
         font-size: 15px;
-        padding-inline: 2rem;
+        text-align: center;
     }
 
 
     .conainerAbout {
         display: flex;
         flex-direction: column;
-        height: 100%;
         width: 100%;
     }
 
     .alignTittle {
         margin-inline: 0px;
-            width: 100%;
+        width: 100%;
     }
 
 
@@ -196,8 +149,62 @@ padding-block: 1rem;
         flex-direction: column;
         align-items: center;
     }
-    .tittle{
+
+    .tittle {
         text-align: center;
     }
+ }
+   */
+
+
+
+ @media (min-width: 801px) and (max-width: 1500px) {
+    .conainerAbout {
+            /* display: block; */
+            height: 100%;
+            width: 100%;
+        }
+    
+        .conainerAlineacion {
+            width: 100%;
+            height: 100%;
+        }
+    
+        .text {
+            width: 100%;
+            font-size: 15px;
+            /* padding-inline: 1rem; */
+        }
+    
+        .alignTittle {
+            width: 100%;
+            margin-inline: 0px;
+        }
+    
+        .alineacionText {
+            width: 100%;
+            padding-inline: 1em;
+            /* height: 100%; */
+            margin-right: 0px;
+            text-align: center;
+            padding-inline: 2em;
+        }
+    
+    
+        .imageAndText {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding-right: 0rem;
+            padding-top: 0rem;
+        }
+    
+        .tittle {
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+        }
  }
  

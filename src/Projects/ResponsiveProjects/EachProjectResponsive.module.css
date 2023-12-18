@@ -13,6 +13,7 @@
 .description h2{
     font-family: 'Syncopate', sans-serif;
     font-size: 25;
+    padding-block: 1rem;
 }
 .description p{
         font-family: 'Inter', sans-serif;
@@ -29,7 +30,7 @@
 }
 
 .box {
-    /* border: 1px solid white; */
+    border: 1px solid white;
     padding-inline: 1rem;
     margin-top: 1rem;
     cursor: pointer;
