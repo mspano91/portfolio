@@ -25,7 +25,7 @@
 
 
 .box {
-    /* border: 1px solid white; */
+    border: 1px solid white;
     padding-inline: 1rem;
     margin-top: 3rem;
     cursor: pointer;
@@ -88,9 +88,9 @@
 
     @media (max-width:319px),(max-width:800px) {
         .description {
-            width: 600px;
-            justify-content: center;
-            align-items: center;
+                width: 700px;
+                    height: 100%;
+                    padding-inline: none;
 }
         .innerCarousel{
             width: 100%;
@@ -105,32 +105,52 @@
         width: 100%
             
                 }
+        .links {
+             margin-top: 1rem;
+        }
         }
 
-@media (min-width: 769px) and (max-width: 900px) {
-        .description {
-                width: 600px
-            }
-            .innerCarousel {
-                width: 100%
+    /* @media (min-width: 768px) and (max-width: 900px) {
+            .description {
+                width: 550px;
+                height: 100%;
+                padding-inline: 0px;
                 }
-.item {
-    display: block;
-    height: 100%;
-    width: 100%;
-    
-}} 
+                .innerCarousel {
+                    width: 100%
+                    }
+    .item {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        align-items: center;
 
-@media (min-width: 900px) and (max-width: 1200px) {
+    }
+    .links {
+        margin-top: 1rem;
+    }
+    }  */
+
+@media (min-width: 800px) and (max-width: 1200px) {
         .description {
-                width: 600px
+                width: 700px;
+                height: 100%;
+                padding-inline: none;
             }
             .innerCarousel {
                 width: 100%
                 }
 .item {
-    display: block;
+    display: flex;
+    flex-direction: column;
     height: 100%;
     width: 100%;
+    align-items: center;
     
-}} 
+}
+
+ .links{
+    margin-top: 1rem;
+} 
+} 

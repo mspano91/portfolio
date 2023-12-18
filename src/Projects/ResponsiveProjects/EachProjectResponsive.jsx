@@ -24,10 +24,10 @@ export default function EachProjectResponsive() {
         <div className={style.innerCarousel}>
           {visibleVideos.map((video, index) => (
             <div className={style.item}>
-              <img className={style.picture} src={video.imagen} alt="" />
               <div className={style.description}>
                 <h2>{video.tittle}</h2>
-                <p>{video.description}</p>
+                <img className={style.picture} src={video.imagen} alt="" />
+                {/* <p>{video.description}</p> */}
                 <div className={style.links}>
                   {video.git && (
                     <a

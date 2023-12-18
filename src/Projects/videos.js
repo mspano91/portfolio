@@ -6,7 +6,7 @@ import res4 from "../assets/img/res4.png";
 const videos = [
   {
     video: "https://www.youtube.com/embed/7tl0l3bRQjA",
-    tittle: "Pokemon ApiRest",
+    tittle: "Poke ApiRest",
     description:
       "I developed a RESTful Pokémon API by fetching data from the official Pokémon API available online. Initially, the server-side implementation was carried out, where requests to the API were made, and database models were created to store Pokémon data in Redux. This allowed us to manage information across global states without the need for constant requests. Subsequently, a visually appealing front end was crafted where Pokémon can be viewed and filtered in various ways. Users can search for Pokémon by name using a search bar, and a form is available for creating and deleting custom Pokémon.",
     git: "https://github.com/mspano91/Poke_Api",
